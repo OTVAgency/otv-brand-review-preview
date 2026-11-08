@@ -148,15 +148,15 @@
         </div>
         <h3 class="specimen-subhead specimen-subhead--secondary">Secondary specimens</h3>
         <div class="specimen-grid specimen-grid--horizontal specimen-grid--secondary">
-          <div class="logo-specimen logo-specimen--dark">
-            <p class="specimen-label"><code>${n.horizontalDark}</code> · horizontal on dark band <span class="accent-note">(proposed accent rule; 2132×830 transparent)</span></p>
+          <div class="logo-specimen logo-specimen--backplate-dark-band">
+            <p class="specimen-label"><code>${n.horizontalDark}</code> · horizontal on dark band <span class="accent-note">(invariant verified dark band · proposed accent rule; 2132×830 transparent)</span></p>
             <div class="logo-row">
               <span class="accent-rule" aria-hidden="true"></span>
               <img class="logo-img--horizontal" src="${e(t.horizontalDark)}" width="2132" height="830" alt="OTV Agency horizontal lockup, white artwork on transparent" />
             </div>
           </div>
-          <div class="logo-specimen logo-specimen--light">
-            <p class="specimen-label"><code>${n.horizontalLight}</code> · horizontal on cream (2132×830 transparent)</p>
+          <div class="logo-specimen logo-specimen--backplate-cream">
+            <p class="specimen-label"><code>${n.horizontalLight}</code> · horizontal on cream (invariant #ebe7df · 2132×830 transparent)</p>
             <img class="logo-img--horizontal" src="${e(t.horizontalLight)}" width="2132" height="830" alt="OTV Agency horizontal lockup, dark artwork on transparent" />
           </div>
         </div>
