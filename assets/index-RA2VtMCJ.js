@@ -138,13 +138,33 @@
 
       <section class="panel" aria-labelledby="specimens-heading">
         <h2 id="specimens-heading">Logos, type &amp; interactive specimens</h2>
-        <div class="symbol-primary" role="group" aria-labelledby="symbol-primary-heading">
-          <p id="symbol-primary-heading" class="specimen-label symbol-primary-tag">Primary specimen · <code>${n.symbol3d}</code> · RGBA transparent</p>
-          <p class="glow-disclosure proposed-tag"><strong>PROPOSED presentation treatment — NOT APPROVED.</strong> CSS-only palette-accent radial glow behind the unmodified PNG (no image edits, recoloring, stroke, neon, or animation).</p>
-          <div class="symbol-3d-stage">
-            <div class="symbol-3d-glow" aria-hidden="true"></div>
-            <img class="logo-img--symbol-3d logo-img--symbol-3d-primary" src="${e(t.symbol3d)}" width="429" height="414" alt="3D V symbol specimen with transparent alpha, primary display" />
+        <div class="symbol-effect-review" role="group" aria-labelledby="symbol-effect-heading">
+          <p id="symbol-effect-heading" class="specimen-label symbol-primary-tag">Primary specimen · <code>${n.symbol3d}</code> · PROPOSED effect review (effect-only)</p>
+          <p class="glow-disclosure proposed-tag"><strong>PROPOSED EFFECT-ONLY · NOT APPROVED.</strong> Teal <code>#4FC3CF</code> + blue <code>#6AABDC</code> — not canonical palette. No palette direction selected.</p>
+          <p class="effect-limitation">Exterior edge: layered <code>filter: drop-shadow()</code> on alpha (silhouette-following, outside opaque graphite only). Diagonal teal→blue is approximated by dual-offset shadows, not an SVG gradient stroke. Prior diffuse palette-accent radial removed from this comparison.</p>
+          <div class="effect-compare-grid" data-spec-width="320">
+            <figure class="effect-compare-cell">
+              <figcaption class="specimen-label">Untreated · PNG only</figcaption>
+              <div class="symbol-3d-stage symbol-3d-stage--compare symbol-3d-stage--untreated">
+                <img class="logo-img--symbol-3d logo-img--symbol-3d-primary logo-img--compare" src="${e(t.symbol3d)}" width="429" height="414" alt="3D V symbol untreated" />
+              </div>
+            </figure>
+            <figure class="effect-compare-cell">
+              <figcaption class="specimen-label">Treated · proposed edge + halo</figcaption>
+              <div class="symbol-3d-stage symbol-3d-stage--compare symbol-3d-treated">
+                <img class="logo-img--symbol-3d logo-img--symbol-3d-primary logo-img--compare logo-img--effect-treated" src="${e(t.symbol3d)}" width="429" height="414" alt="3D V symbol with proposed exterior edge and halo" />
+              </div>
+            </figure>
           </div>
+          <details class="effect-params">
+            <summary>Implemented effect parameters (320px render width)</summary>
+            <ul class="effect-param-list">
+              <li>Edge: teal→blue diagonal via dual <code>drop-shadow</code> (α-following), 1px mobile / 1.25px desktop (max 1.5px)</li>
+              <li>Edge opacity: 0.72 light · 0.82 dark</li>
+              <li>Halo: 18px blur, spread ≤3px, same colors · opacity 0.14 light · 0.22 dark</li>
+              <li>Source PNG pixels unchanged; no animation</li>
+            </ul>
+          </details>
         </div>
         <h3 class="specimen-subhead specimen-subhead--secondary">Secondary specimens</h3>
         <div class="specimen-grid specimen-grid--horizontal specimen-grid--secondary">
